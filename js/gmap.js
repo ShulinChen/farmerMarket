@@ -97,6 +97,12 @@ $(function() {
 								infowindow.open(map,marker);
 							});
 
+							google.maps.event.addListener(marker, 'touthstart', function(){
+								
+								infowindow.open(map,marker);
+							});
+
+
 
 						  //  And increase the bounds to take this point
 						  bounds.extend(currentLatLon);	
