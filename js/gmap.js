@@ -72,7 +72,7 @@ $(function() {
 								title: idAndName[id],
 							});
 
-							contentString = '<div class="markerPop">' +
+							contentString = '<div id="infowindow">' +
 												'<h1>' + idAndName[id] + '</h1>' + 
 												'<h3>' + addr + '</h3>' +
 												'<p>' + productInfo.split(';') + '</p>' +
