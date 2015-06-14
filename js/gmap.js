@@ -90,6 +90,14 @@ $(function() {
 								
 								infowindow.open(map,marker);
 							});
+
+							//this is for mobile users
+							google.maps.event.addListener(marker, 'mousedown', function(){
+								
+								infowindow.open(map,marker);
+							});
+
+
 						  //  And increase the bounds to take this point
 						  bounds.extend(currentLatLon);	
 						  //  Fit these bounds to the map
